@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Courgette&family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Courgette&family=Gupter:wght@400;500;700&family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Courgette&family=Gupter:wght@400;500;700&family=Kalam:wght@300;400;700&family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400..700&family=Courgette&family=Gupter:wght@400;500;700&family=Kalam:wght@300;400;700&family=Kalnia+Glaze:wght@100..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Courgette&family=Gupter:wght@400;500;700&family=Kalam:wght@300;400;700&family=Kalnia+Glaze:wght@100..700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+#main{
+    text-align: center;
+    color: #FFFF00;
+    font-family: "Platypi", serif;
+    font-size: 20px;
+    padding-top: 30px;
+   
+}
+h4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+}
+.visually-hidden{
+    font-size: 25px;
+}
+.fa-masks-theater{
+    color: #FFFF00;
+}
+
+#container{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    
+
+}
+#movie-name{
+    border-radius: 4px;
+    background-color: black;
+     border-color: #FFFF00;
+    height: 45px;
+    width: 450px;
+    font-size: 20px;
+    color: rgb(212, 196, 196);
+  
+    /* outline-color: #FFFF00; */
+}
+
+
+.movie-cards{
+    width: calc(25% - 6px - 23px) ;
+    border: 3px solid rgb(0, 166, 255);
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Kalam", cursive;
+    font-size: 13.5px;
+    transition-property: transform;
+    transition-duration: 500ms;
+ 
+    
+    /* background-image: url("https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+}
+
+
+.movie-cards:hover{
+    border-color: #FFFF00;
+    transform: scale(0.9);
+    
+}
+.movie-thumbnail{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+body{
+  background-color: rgb(46, 46, 46);
+}
+#search-btn{
+   background-color: black;
+   border: 2px solid #FFFF00;
+   /* border-color: #FFFF00; */
+   color: white;
+   font-size: 20px;
+   border-radius: 4px;
+   width: 75px;
+   height: 47px;
+
+   padding: 0px;
+}
+#search-btn:hover{
+    background-color:#FFFF00;
+    color: black;
+ }
+.spinner-border{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#movie-status{
+    padding-top: 60px;
+    font-size: 30px;
+}
+
+ @media(max-width :600px){
+    .movie-cards{
+        width: calc(100%  - 6px - 23px);
+
+    }
+}
+@media(min-width :601px){
+    .movie-cards{
+        width: calc(50%  - 6px - 23px);
+
+    }
+}
+@media(min-width :901px){
+    .movie-cards{
+        width: calc(33.33%  - 6px - 23px);
+
+    }
+}
+@media(min-width :1201px){
+    .movie-cards{
+        width: calc(25%  - 6px - 26px);
+
+    }
+}
